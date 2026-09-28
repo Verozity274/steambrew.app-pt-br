@@ -1,6 +1,6 @@
-# <https://steambrew.app/pt-br>
+# http://localhost:3000/pt-br
 
-[Página Inicial](https://steambrew.app/pt-br/) • [Discord](https://steambrew.app/discord) • [Documentação](https://docs.steambrew.app/pt-br)
+[Página Inicial](https://steambrew.app/) • [Discord](https://steambrew.app/discord) • [Documentação](https://docs.steambrew.app/)
 
 Documentação e recursos do site para o Millennium. Este repositório também inclui a API do Millennium, responsável por fornecer atualizações de temas e plugins.
 
