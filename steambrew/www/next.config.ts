@@ -11,9 +11,9 @@ const config: NextConfig = {
 				permanent: false,
 			},
 			{
-				source: '/theme',
+				source: '/tema',
 				has: [{ type: 'query', key: 'id', value: '(?<id>.+)' }],
-				destination: '/theme/:id',
+				destination: '/tema/:id',
 				permanent: false,
 			},
 		];

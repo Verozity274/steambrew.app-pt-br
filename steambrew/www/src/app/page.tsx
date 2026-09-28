@@ -57,7 +57,7 @@ function RenderHome() {
     return (
         <>
             <div itemScope itemType="https://schema.org/WebSite">
-                <meta itemProp="url" content="https://steambrew.app/" />
+                <meta itemProp="url" content="https://steambrew.app/pt-br/" />
                 <meta itemProp="name" content="Steam Homebrew" />
             </div>
 
@@ -71,12 +71,12 @@ function RenderHome() {
                     <div className="page-section-inner">
                         <div id="hero-top-container" className="flex-container align-center justify-center direction-column">
                             <h1 className="main-title text-center title">Millennium</h1>
-                            <p className="text-center title-description">An open source gateway to a better Steam® client experience.</p>
+                            <p className="text-center title-description">Uma porta de entrada de código aberto para uma melhor experiência do cliente Steam®.</p>
                             <div className="btn-container">
-                                <a href="https://docs.steambrew.app/users/getting-started/installation" target="_blank" rel="noreferrer">
+                                <a href="https://docs.steambrew.app/pt-br/usuarios/getting-started/installation" target="_blank" rel="noreferrer">
                                     <button className="btn btn-primary" id="hero-download-button">
                                         <PlatformIcon />
-                                        <span>Install Now</span>
+                                        <span>Baixe agora</span>
                                     </button>
                                 </a>
                                 <a href="/discord">
@@ -87,18 +87,21 @@ function RenderHome() {
                                                 d="M1.5 2.75a.25.25 0 01.25-.25h8.5a.25.25 0 01.25.25v5.5a.25.25 0 01-.25.25h-3.5a.75.75 0 00-.53.22L3.5 11.44V9.25a.75.75 0 00-.75-.75h-1a.25.25 0 01-.25-.25v-5.5zM1.75 1A1.75 1.75 0 000 2.75v5.5C0 9.216.784 10 1.75 10H2v1.543a1.457 1.457 0 002.487 1.03L7.061 10h3.189A1.75 1.75 0 0012 8.25v-5.5A1.75 1.75 0 0010.25 1h-8.5zM14.5 4.75a.25.25 0 00-.25-.25h-.5a.75.75 0 110-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0114.25 12H14v1.543a1.457 1.457 0 01-2.487 1.03L9.22 12.28a.75.75 0 111.06-1.06l2.22 2.22v-2.19a.75.75 0 01.75-.75h1a.25.25 0 00.25-.25v-5.5z"
                                             ></path>
                                         </svg>
-                                        <span>Join the conversation</span>
+                                        <span>Participe da conversa</span>
                                     </button>
                                 </a>
                             </div>
                             {/*<div className="information-container">
 								<div className="information-container-header">INFO</div>
 								<div className="information-container-body">
-									On December 19th, 2025, Valve updated the architecture of the Steam Client from 32bit to 64bit. As a result, some older versions of Millennium will no longer work, and won't be able to auto update. If Millennium is
-									not loading, a manual re-install is required. The latest fixed version is 2.31.0. If this is your first time installing, or Millennium is working as intended, you can ignore this message.
+									Em 19 de dezembro de 2025, a Valve atualizou a arquitetura do cliente Steam de 32 bits para 64 bits.
+                                    Como resultado, algumas versões antigas do Millennium não funcionarão mais e não poderão ser atualizadas
+                                    automaticamente. Se o Millennium não estiver carregando, será necessária uma reinstalação manual.
+                                    A versão corrigida mais recente é a 2.31.0. Se esta for a sua primeira instalação ou se
+                                    o Millennium estiver funcionando corretamente, você pode ignorar esta mensagem.
 									<br />
 									<br />
-									Thanks for your understanding, and thanks for using Millennium ❤️
+									Agradecemos a sua compreensão e por usar o Millennium. ❤️
 								</div>
 							</div>*/}
 
@@ -109,7 +112,7 @@ function RenderHome() {
                                 </div>
                                 <div className="downloads-count">
                                     <CountUp className='count-value' start={0} end={Number(stat?.server_members ?? 0)} />
-                                    <span className='count-label'> Discord Members</span>
+                                    <span className='count-label'> Membros no Discord</span>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +126,7 @@ function RenderHome() {
                         {/*<div className="showCaseContainer">
 							<video ref={videoRef} autoPlay muted loop playsInline>
 								<source src="https://github.com/user-attachments/assets/ea9028d1-ecfd-4d95-b199-33bb6b657bff" type="video/mp4" />
-								Your browser does not support the video tag.
+								Seu navegador não suporta a tag de vídeo.
 							</video>
 						</div>*/}
 
@@ -132,16 +135,16 @@ function RenderHome() {
                                 <div className="theme-showcase hide-mobile">
                                     <video autoPlay muted loop playsInline>
                                         <source src="https://github.com/user-attachments/assets/ea9028d1-ecfd-4d95-b199-33bb6b657bff" type="video/mp4" />
-                                        Your browser does not support the video tag.
+                                        Seu navegador não suporta a tag de vídeo.
                                     </video>
                                 </div>
                                 <div className="feature-info">
-                                    <h1 className="title">Themes</h1>
+                                    <h1 className="title">Temas</h1>
                                     <p className="title-description" style={{ fontSize: '18px' }}>
-                                        Themes allow you to completely customize your client with CSS. You can either make your own theme, or download the wide variety of themes from our community.
+                                        Os temas permitem que você personalize completamente seu cliente com CSS. Você pode criar seu próprio tema ou baixar a grande variedade de temas da nossa comunidade.
                                     </p>
-                                    <a className="btn btn-secondary" href="/themes">
-                                        <span>Browse Themes</span>
+                                    <a className="btn btn-secondary" href="/temas">
+                                        <span>Navegar Temas</span>
                                     </a>
                                 </div>
                             </div>
@@ -149,10 +152,10 @@ function RenderHome() {
                                 <div className="feature-info">
                                     <h1 className="title">Plugins</h1>
                                     <p className="title-description" style={{ fontSize: '18px' }}>
-                                        Plugins can increase the functionality and user experience of the app through TypeScript and LuaJIT. Write your own or download plugins made by the community.
+                                        Os plugins podem aumentar a funcionalidade e a experiência do usuário do app através de TypeScript e LuaJIT. Escreva o seu próprio ou baixe plugins feitos pela comunidade.
                                     </p>
                                     <a className="btn btn-secondary" href="/plugins">
-                                        <span>Browse Plugins</span>
+                                        <span>Navegar Plugins</span>
                                     </a>
                                 </div>
                                 <div className="plugin-showcase hide-mobile">
@@ -217,8 +220,8 @@ function RenderHome() {
                             </div>
                         </div>
                         <div className="open-source-section" ref={contributorsRef}>
-                            <h1 className="title text-center">Open Source ❤️</h1>
-                            <p className="title-description text-center">Community driven, made by beautiful people just like you.</p>
+                            <h1 className="title text-center">Código Aberto ❤️</h1>
+                            <p className="title-description text-center">Criado pela comunidade, feito por pessoas incríveis como você.</p>
 
                             {stat?.contributors && (
                                 <div className="contributors-container">
@@ -237,7 +240,7 @@ function RenderHome() {
                                             className="btn btn-secondary view-more-contributors"
                                             onClick={() => window.open('https://github.com/SteamClientHomebrew/Millennium/graphs/contributors', '_blank')}
                                         >
-                                            View More
+                                            Ver Mais
                                         </button>
                                     )}
                                 </div>

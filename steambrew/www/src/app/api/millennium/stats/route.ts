@@ -8,7 +8,7 @@ let inflightFetch: Promise<Stats> | null = null;
 
 const githubHeaders = () => {
 	if (!process.env.BEARER) {
-		throw new Error('GitHub API token (BEARER) is required');
+		throw new Error('Token da API do GitHub (BEARER) é obrigatório');
 	}
 
 	return {
@@ -48,7 +48,7 @@ async function getDownloadCountAndLatestVersion() {
 		const res = await fetch(url, { headers, next: { revalidate: 1800 }, signal: AbortSignal.timeout(10000) });
 
 		if (!res.ok) {
-			throw new Error(`GitHub API request failed: ${res.status} ${res.statusText}`);
+			throw new Error(`A solicitação à API do GitHub falhou: ${res.status} ${res.statusText}`);
 		}
 
 		const releases = await res.json();
@@ -75,7 +75,7 @@ async function getDownloadCountAndLatestVersion() {
 	const latestVersion = (latestNonPrereleaseVersion ?? latestRelease)?.tag_name;
 
 	if (!latestVersion) {
-		throw new Error('No GitHub releases found for SteamClientHomebrew/Millennium');
+		throw new Error('Nenhuma versão do GitHub encontrada para SteamClientHomebrew/Millennium');
 	}
 
 	// add download count from old cdn as well: https://api.github.com/repos/ShadowMonster99/millennium-steam-binaries/releases
@@ -119,6 +119,6 @@ export async function GET(request: Request) {
 		const data = await fetchStats();
 		return Response.json(data);
 	} catch (error) {
-		return Response.json({ error: 'Failed to fetch Millennium stats' }, { status: 503 });
+		return Response.json({ error: 'Falha ao buscar estatísticas do Millennium' }, { status: 503 });
 	}
 }

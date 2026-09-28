@@ -61,7 +61,7 @@ async function CheckForPluginUpdates(plugins: PluginUpdateCheck[]) {
 		const pluginInfo = allPlugins.find((p) => p.initCommitId === plugin.id);
 
 		if (!pluginInfo || !pluginInfo.commitId) {
-			console.warn(`Plugin ${plugin.id} not found in database — skipping`);
+			console.warn(`Plugin ${plugin.id} não encontrado no banco de dados — ignorando`);
 			return [];
 		}
 
@@ -86,12 +86,12 @@ export async function POST(request: Request) {
 
 		const [themeStatuses, pluginStatuses] = await Promise.all([
 			CheckForThemeUpdates(json?.themes).catch((error) => {
-				console.error('Error checking theme updates:', error);
-				return { error: 'Failed to check theme updates: ' + String(error) };
+				console.error('Erro ao verificar atualizações de temas:', error);
+				return { error: 'Falha ao verificar atualizações de temas: ' + String(error) };
 			}),
 			CheckForPluginUpdates(json?.plugins).catch((error) => {
-				console.error('Error checking plugin updates:', error);
-				return { error: 'Failed to check plugin updates: ' + String(error) };
+				console.error('Erro ao verificar atualizações de plugins:', error);
+				return { error: 'Falha ao verificar atualizações de plugins: ' + String(error) };
 			}),
 		]);
 
@@ -100,7 +100,7 @@ export async function POST(request: Request) {
 			plugins: pluginStatuses,
 		});
 	} catch (error) {
-		console.error('Error checking plugin updates:', error);
-		return NextResponse.json({ error: 'Failed to check plugin updates' }, { status: 500 });
+		console.error('Erro ao verificar atualizações de plugins:', error);
+		return NextResponse.json({ error: 'Falha ao verificar atualizações de plugins' }, { status: 500 });
 	}
 }

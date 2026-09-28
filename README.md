@@ -1,16 +1,16 @@
-# https://steambrew.app
+# <https://steambrew.app/pt-br>
 
-[Home Page](https://steambrew.app/) • [Discord](https://steambrew.app/discord) • [Documentation](https://docs.steambrew.app/)
+[Página Inicial](https://steambrew.app/pt-br/) • [Discord](https://steambrew.app/discord) • [Documentação](https://docs.steambrew.app/pt-br)
 
-Documentation and website assets for Millennium. This repository also includes the Millennium API that is responsible for serving theme and plugin updates.
+Documentação e recursos do site para o Millennium. Este repositório também inclui a API do Millennium, responsável por fornecer atualizações de temas e plugins.
 
-## Contents
+## Conteúdo (Inglês/English)
 
-- [User API](./steambrew/www/src/app/api)
-- [Documentation](./steambrew/docs/)
-- [SteamBrew App](./steambrew/www/)
+- [API do Usuário](./steambrew/www/src/app/api)
+- [Documentação](./steambrew/docs/)
+- [Aplicativo SteamBrew](./steambrew/www/)
 
-## Building
+## Compilando
 
 ```bash
 git clone https://github.com/SteamClientHomebrew/SteamBrew.git
@@ -19,6 +19,6 @@ bun install
 bun run dev
 ```
 
-## Contributing
+## Contribuindo
 
-Anyone can contribute, anything that enchances the end-user experience is appreciated!
+Qualquer pessoa pode contribuir; qualquer coisa que melhore a experiência do usuário final é bem-vinda!

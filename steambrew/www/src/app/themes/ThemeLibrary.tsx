@@ -45,7 +45,7 @@ function ThemeLibrary({ isSteamClient }: ThemeLibraryProps) {
 
 				let filteredData: any[] = [];
 
-				if (selectedTags?.label !== 'All') {
+				if (selectedTags?.label !== 'Todos') {
 					filteredData = result.filter((item: any) => item.tags.includes(selectedTags?.label));
 				} else {
 					filteredData = result;
@@ -72,7 +72,7 @@ function ThemeLibrary({ isSteamClient }: ThemeLibraryProps) {
 				}
 				setCards(sorted.map((item: any) => <CreateCard key={item.id} data={item} />));
 			} catch (error) {
-				console.error('Error fetching data:', error);
+				console.error('Erro ao obter dados:', error);
 			} finally {
 				setLoading(false);
 			}
@@ -82,11 +82,11 @@ function ThemeLibrary({ isSteamClient }: ThemeLibraryProps) {
 	}, [sortBy, selectedTags, searchQuery]);
 
 	const [options, setOptions] = useState([
-		{ value: 1, label: 'Most Downloaded', checked: true },
-		{ value: 2, label: 'Least Downloaded', checked: false },
-		{ value: 3, label: 'Recently Updated', checked: false },
-		{ value: 4, label: 'Least Recently Updated', checked: false },
-		{ value: 5, label: 'Alphabetically', checked: false },
+		{ value: 1, label: 'Mais Baixados', checked: true },
+		{ value: 2, label: 'Menos Baixados', checked: false },
+		{ value: 3, label: 'Atualizados Recentemente', checked: false },
+		{ value: 4, label: 'Menos Atualizados Recentemente', checked: false },
+		{ value: 5, label: 'Alfabeticamente', checked: false },
 	]);
 
 	const toggleCheckbox = (index: number) => {
@@ -110,8 +110,8 @@ function ThemeLibrary({ isSteamClient }: ThemeLibraryProps) {
 				<section id="addons-header" className="page-section content-header">
 					<div className="page-section-inner flex-container justify-between align-center" id="theme-header">
 						<div className="header-left">
-							<h1 className="title">Pick a Flavour!</h1>
-							<p className="title-tooltip">Browse the community's custom made themes. We might have exactly what you're looking for!</p>
+							<h1 className="title">Escolha um!</h1>
+							<p className="title-tooltip">Explore os temas personalizados da comunidade. Podemos ter exatamente o que você procura!</p>
 						</div>
 					</div>
 				</section>
@@ -129,7 +129,7 @@ function ThemeLibrary({ isSteamClient }: ThemeLibraryProps) {
 							instanceId="theme-tags"
 							className="react-select-container"
 							classNamePrefix="react-select"
-							placeholder="Select tags..."
+							placeholder="Selecionar tags..."
 							options={tags.map((tag, index) => ({ value: index, label: tag }))}
 							onChange={(opt) => setSelectedTags(opt)}
 							value={selectedTags}
@@ -138,7 +138,7 @@ function ThemeLibrary({ isSteamClient }: ThemeLibraryProps) {
 							<svg className="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
 								<path fillRule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
 							</svg>
-							<input className="search" id="addon-search" type="text" name="search" placeholder="Type here to search..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
+							<input className="search" id="addon-search" type="text" name="search" placeholder="Digite aqui para pesquisar..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
 							<button className="search-clear-btn" type="reset">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="16" height="16">
 									<path
@@ -163,8 +163,8 @@ function ThemeLibrary({ isSteamClient }: ThemeLibraryProps) {
 											<line x1="21" y1="21" x2="16.65" y2="16.65" />
 											<line x1="8" y1="11" x2="14" y2="11" />
 										</svg>
-										<span className="no-results-title">No themes found</span>
-										<span className="no-results-description">Try adjusting your search or filters</span>
+										<span className="no-results-title">Nenhum tema encontrado</span>
+										<span className="no-results-description">Tente ajustar sua pesquisa ou filtros</span>
 									</div>
 								) : (
 									<div className="card-container">

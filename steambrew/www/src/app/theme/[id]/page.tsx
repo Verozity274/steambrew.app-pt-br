@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 	const res = await fetch(`${API_URL}/api/v2/details/${id}`);
 
 	if (!res.ok) {
-		return { title: 'Not Found • Millennium' };
+		return { title: 'Não Encontrado • Millennium' };
 	}
 
 	const json = await res.json();
@@ -28,17 +28,17 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 		openGraph: {
 			title: `${json.name} - Millennium`,
 			description: json.description,
-			images: [{ url: json?.header_image, alt: 'Theme Thumbnail', width: 1920, height: 1080 }],
+			images: [{ url: json?.header_image, alt: 'Tema Thumbnail', width: 1920, height: 1080 }],
 			siteName: 'Millennium',
 		},
 		twitter: {
 			card: 'summary_large_image',
 			title: `${json.name} - Millennium`,
 			description: json.description,
-			images: [{ url: json?.header_image, alt: 'Theme Thumbnail' }],
+			images: [{ url: json?.header_image, alt: 'Tema Thumbnail' }],
 			site: 'Millennium',
 		},
-		authors: [{ name: json?.data?.github?.owner ?? 'Anonymous' }],
+		authors: [{ name: json?.data?.github?.owner ?? 'Anônimo' }],
 	};
 }
 

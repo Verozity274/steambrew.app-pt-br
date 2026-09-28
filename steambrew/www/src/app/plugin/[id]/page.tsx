@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 	const res = await fetch(`${API_URL}/api/v1/plugin/${id}`);
 
 	if (!res.ok) {
-		return { title: 'Not Found • Millennium' };
+		return { title: 'Não Encontrado • Millennium' };
 	}
 
 	const data = await res.json();
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 			images: [{ url: data?.thumbnail, alt: 'Plugin Thumbnail' }],
 			site: 'Millennium',
 		},
-		authors: [{ name: data.repoOwner ?? 'Anonymous' }],
+		authors: [{ name: data.repoOwner ?? 'Anônimo' }],
 	};
 }
 

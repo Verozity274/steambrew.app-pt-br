@@ -60,7 +60,7 @@ function PluginLibrary({ isSteamClient }: PluginLibraryProps) {
                 }
                 setCards(sorted.map((item: any) => <CreateCard key={item.id} data={item} />));
             } catch (error) {
-                console.error('Error fetching data:', error);
+                console.error('Erro ao obter dados:', error);
             } finally {
                 setLoading(false);
             }
@@ -70,11 +70,11 @@ function PluginLibrary({ isSteamClient }: PluginLibraryProps) {
     }, [sortBy, selectedTags, searchQuery]);
 
     const [options, setOptions] = useState([
-        { value: 1, label: 'Most Downloaded', checked: true },
-        { value: 2, label: 'Least Downloaded', checked: false },
-        { value: 3, label: 'Recently Updated', checked: false },
-        { value: 4, label: 'Least Recently Updated', checked: false },
-        { value: 5, label: 'Alphabetically', checked: false },
+        { value: 1, label: 'Mais Baixados', checked: true },
+        { value: 2, label: 'Menos Baixados', checked: false },
+        { value: 3, label: 'Atualizados Recentemente', checked: false },
+        { value: 4, label: 'Menos Atualizados Recentemente', checked: false },
+        { value: 5, label: 'Alfabeticamente', checked: false },
     ]);
 
     const toggleCheckbox = (index: number) => {
@@ -98,8 +98,8 @@ function PluginLibrary({ isSteamClient }: PluginLibraryProps) {
                 <section id="addons-header" className="page-section content-header">
                     <div className="page-section-inner flex-container justify-between align-center" id="theme-header">
                         <div className="header-left">
-                            <h1 className="title">More Power, Less Setup.</h1>
-                            <p className="title-tooltip">Browse the community's custom made plugins. We might have exactly what you're looking for!</p>
+                            <h1 className="title">Mais potência, menos configuração.</h1>
+                            <p className="title-tooltip">Navegue pelos plugins personalizados da comunidade. Pode ser que tenhamos exatamente o que você está procurando!</p>
                         </div>
                     </div>
                 </section>
@@ -117,7 +117,7 @@ function PluginLibrary({ isSteamClient }: PluginLibraryProps) {
                             <svg className="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fillRule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path>
                             </svg>
-                            <input className="search" id="addon-search" type="text" name="search" placeholder="Type here to search..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
+                            <input className="search" id="addon-search" type="text" name="search" placeholder="Digite aqui para pesquisar..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
                             <button className="search-clear-btn" type="reset">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="16" height="16">
                                     <path
@@ -151,11 +151,11 @@ function PluginLibrary({ isSteamClient }: PluginLibraryProps) {
 										</svg>
 									</div>
 									<div className="content">
-										Looking for <b>Augmented Steam</b> or <b>SteamDB</b>? They've both been superseded by{' '}
+										Procurando por <b>Augmented Steam</b> ou <b>SteamDB</b>? Ambos foram substituídos por{' '}
 										<a href="/plugin/788ed8554492" style={{ color: 'inherit', fontWeight: 'bold', textDecoration: 'underline' }}>
 											Extendium
 										</a>{' '}
-										on April 4th, 2026. Extendium offers the same features and more!
+										em 4 de abril de 2026. Extendium oferece as mesmas funcionalidades e muito mais!
 									</div>
 								</div>*/}
                                 {loading ? (
@@ -169,8 +169,8 @@ function PluginLibrary({ isSteamClient }: PluginLibraryProps) {
                                             <line x1="21" y1="21" x2="16.65" y2="16.65" />
                                             <line x1="8" y1="11" x2="14" y2="11" />
                                         </svg>
-                                        <span className="no-results-title">No plugins found</span>
-                                        <span className="no-results-description">Try adjusting your search or filters</span>
+                                        <span className="no-results-title">Nenhum plugin encontrado</span>
+                                        <span className="no-results-description">Tente ajustar sua pesquisa ou filtros</span>
                                     </div>
                                 ) : (
                                     <div className="card-container plugin-card-container">

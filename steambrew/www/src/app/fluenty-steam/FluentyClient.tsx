@@ -69,7 +69,7 @@ export default function FluentyClient({ isSteamClient }: FluentyClientProps) {
                                                 className="link_link__hbWKh link_secondary__F1rqx"
                                                 href="/themes"
                                             >
-                                                <small>← Back to Themes</small>
+                                                <small>← Voltar aos Temas</small>
                                             </a>
                                             <a
                                                 target="_blank"
@@ -95,7 +95,7 @@ export default function FluentyClient({ isSteamClient }: FluentyClientProps) {
                                                         >
                                                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACmUlEQVR4nO2ZT4hNURzHPywMYxaisDXjz4YhIskUYzNi1pQ/CxJrigXNjClWhCWGWFFsGaWkKWPLFJN/ZcpKM/7n+TN5OnVufbuNe+85d+acl96nTq/eud/v73vfu+93z7kP6vxfbAEuAy+Ab3YMA5fsXM3SDAwA1ZzxAFhMjbEB+FggfDLGgI3UCEtS4SvAOWAdMBtoBNba9ypy3CjQEjv8NOChhBoBlmccvwJ4l7qcorIp9clnhU9oBX6Irp2IXJUg5hIpygXRXSQizyWIuc6Lsl50wwRiJdBv+/pEnaXJHvfBoRuZ8cXqZsh7X4G79nKbFLYBv3OCJLiEz9OamlvLhp9b8FOdihOo2nY7p8wJ7BWzV8CifxR0JUvbDLyW+T0l8nNajHocQuSRp+2ReZPBm+titM8xRBZ52v0yf40S3BejjtRcsjQwr67kaTukrskwKb0+3dZO2ZZnXl3J07ZK3WeU4LMYmY4UinlS95OvSZOYfCf8QrEywY3SiWViYNpaaN5I/aU+Bu1iYHZboRmQ+pt9DHaLwQ3Cc1Pq7/IxOCYGZwjPWal/1MdA1+2HCc8RqX/ex+C2GOwgPDul/i0fg8di0EZ42qT+Ix+DETEwK8TQtEj9t67i6cBPK/4DzCQ8s+QEftlMhVmQ2lTEYkxyzHcRrhbhEPEYkhyrXITbRWg287G4JznM3rwwB0XYRzyuSI4DLsKTIuwlHr0ZW9pM+kRovo1YHJIc5j+GwvSLsJN4dEqOOy7CpyI0HSkWayTHExfhqAjNPSEWCyXHexdhcheu2jtiLBolh3ks77WdOw40EJ4G4ITkeOki1idjtTK6XE7ALN4GayB01Y5BnwWlufa77ROJ8Qihx+0D5a7Iv8M6deowhfwF+BC2GOS0rI0AAAAASUVORK5CYII=" />
                                                             <span draggable>
-                                                                Purchase • $5
+                                                                Comprar • US$5
                                                                 USD
                                                             </span>
                                                         </a>
@@ -108,11 +108,11 @@ export default function FluentyClient({ isSteamClient }: FluentyClientProps) {
                                                     {fluenty.downloads}{" "}
                                                 </span>
                                                 <span className="addon-metadata-row">
-                                                    <strong>Released: </strong>
-                                                    November 24th 2023
+                                                    <strong>Lançado: </strong>
+                                                    24 de novembro de 2023
                                                 </span>
                                                 <span className="addon-metadata-row">
-                                                    <strong>Id: </strong>
+                                                    <strong>ID: </strong>
                                                     fluenty-steam
                                                 </span>
                                             </section>
@@ -131,7 +131,7 @@ export default function FluentyClient({ isSteamClient }: FluentyClientProps) {
                                                     />
                                                     <div className="flex-container justify-center direction-column">
                                                         <h5>Steam Homebrew</h5>
-                                                        <p>Support Server</p>
+                                                        <p>Servidor de Suporte (Inglês)</p>
                                                     </div>
                                                 </div>
                                                 <a
@@ -140,7 +140,7 @@ export default function FluentyClient({ isSteamClient }: FluentyClientProps) {
                                                     className="btn btn-primary btn-join-server"
                                                     href="/discord"
                                                 >
-                                                    <span>Join Server</span>
+                                                    <span>Entrar no Servidor (Inglês)</span>
                                                 </a>
                                             </section>
                                         </div>
@@ -155,16 +155,16 @@ export default function FluentyClient({ isSteamClient }: FluentyClientProps) {
                                             <section>
                                                 <div className="addon-tags">
                                                     <span className="addon-tag">
-                                                        Dark
+                                                        Escuro
                                                     </span>
                                                     <span className="addon-tag">
                                                         Fluent
                                                     </span>
                                                     <span className="addon-tag">
-                                                        Minimal
+                                                        Minimalista
                                                     </span>
                                                     <span className="addon-tag">
-                                                        Soft
+                                                        Confortável
                                                     </span>
                                                 </div>
                                             </section>
@@ -178,53 +178,46 @@ export default function FluentyClient({ isSteamClient }: FluentyClientProps) {
                                             <div className="markdown-body">
                                                 <div>
                                                     <h1>
-                                                        Fluenty, made with ❤️ by
+                                                        Fluenty, feito com ❤️ por
                                                         Millennium
                                                     </h1>
                                                     <p>
-                                                        Inspired by the
-                                                        Microsoft Store Fluent
-                                                        Design template launched
-                                                        with Windows 11
+                                                        Inspirado no
+                                                        Modelo Fluenty da Microsoft Store
+                                                        lançado
+                                                        com o Windows 11
                                                     </p>
                                                     <p>
-                                                        You may ask why this
-                                                        theme costs money, and
-                                                        isn't free like the
-                                                        others. To deliver the
-                                                        best user experience,
-                                                        with fast and secure
-                                                        servers (including this
-                                                        website) we need funding
-                                                        somehow. That's why we
-                                                        made this theme; to give
-                                                        you something in return
-                                                        for supporting us,
-                                                        without forcing ads or
-                                                        other annoying funding
-                                                        methods.
+                                                        Você pode se perguntar por que este
+                                                        tema custa dinheiro e
+                                                        não é gratuito como os outros. Para oferecer a
+                                                        melhor experiência de usuário,
+                                                        com servidores rápidos e seguros (incluindo este
+                                                        site), precisamos de financiamento de alguma forma. É por isso que
+                                                        criamos este tema: para dar
+                                                        algo em troca
+                                                        do seu apoio,
+                                                        sem forçar anúncios ou
+                                                        outros métodos irritantes de financiamento.
                                                     </p>
                                                     <p>
-                                                        With that said, keep in
-                                                        mind that even if
-                                                        updates are sometimes
-                                                        infrequent, we are
-                                                        always working on
-                                                        something new and
-                                                        exciting, even if it may
-                                                        not be Fluenty directly.
-                                                        We are a limited team,
-                                                        and we are doing our
-                                                        best to balance our time
-                                                        between Millennium,
-                                                        Fluenty, and our
-                                                        personal lives.
+                                                        Dito isso,
+                                                        lembre-se de que, mesmo que as atualizações
+                                                        às vezes sejam pouco frequentes,
+                                                        estamos sempre trabalhando em algo novo e empolgante,
+                                                        mesmo que não seja diretamente
+                                                        relacionado ao Fluenty.
+
+                                                        Somos uma equipe pequena e estamos fazendo o
+                                                        possível para equilibrar nosso
+                                                        tempo entre o Millennium, o Fluenty
+                                                        e nossas vidas pessoais.
                                                     </p>
                                                     <p>
-                                                        Thanks for
-                                                        understanding, and we
-                                                        hope you enjoy the theme
-                                                        ❤️
+                                                        Obrigado pela
+                                                        compreensão, e nós
+                                                        esperamos que você
+                                                        goste do tema. ❤️
                                                     </p>
                                                     <a
                                                         href="https://raw.githubusercontent.com/SteamClientHomebrew/SteamBrew/refs/heads/main/steambrew/www/src/media/images/mainHeader.jpg"
@@ -233,7 +226,7 @@ export default function FluentyClient({ isSteamClient }: FluentyClientProps) {
                                                     >
                                                         <img
                                                             src="https://raw.githubusercontent.com/SteamClientHomebrew/SteamBrew/refs/heads/main/steambrew/www/src/media/images/mainHeader.jpg"
-                                                            alt="Steam Skin"
+                                                            alt="Skin da Steam"
                                                         />
                                                     </a>
                                                     <div className="FluentyImageContainer">
@@ -244,7 +237,7 @@ export default function FluentyClient({ isSteamClient }: FluentyClientProps) {
                                                         >
                                                             <img
                                                                 src="https://raw.githubusercontent.com/SteamClientHomebrew/SteamBrew/refs/heads/main/steambrew/www/src/media/images/gameLib.jpg"
-                                                                alt="Steam Skin"
+                                                                alt="Skin da Steam"
                                                             />
                                                         </a>
                                                         <a
@@ -254,7 +247,7 @@ export default function FluentyClient({ isSteamClient }: FluentyClientProps) {
                                                         >
                                                             <img
                                                                 src="https://raw.githubusercontent.com/SteamClientHomebrew/SteamBrew/refs/heads/main/steambrew/www/src/media/images/friendsChat.jpg"
-                                                                alt="Steam Skin"
+                                                                alt="Skin da Steam"
                                                             />
                                                         </a>
                                                     </div>
@@ -266,7 +259,7 @@ export default function FluentyClient({ isSteamClient }: FluentyClientProps) {
                                                         >
                                                             <img
                                                                 src="https://raw.githubusercontent.com/SteamClientHomebrew/SteamBrew/refs/heads/main/steambrew/www/src/media/images/storePage.jpg"
-                                                                alt="Steam Skin"
+                                                                alt="Skin da Steam"
                                                             />
                                                         </a>
                                                         <a
@@ -276,50 +269,51 @@ export default function FluentyClient({ isSteamClient }: FluentyClientProps) {
                                                         >
                                                             <img
                                                                 src="https://raw.githubusercontent.com/SteamClientHomebrew/SteamBrew/refs/heads/main/steambrew/www/src/media/images/gameStorePage.jpg"
-                                                                alt="Steam Skin"
+                                                                alt="Skin da Steam"
                                                             />
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <h2>Installing</h2>
+                                                <h2>Instalação</h2>
                                                 <p>
-                                                    Purchase the theme through
-                                                    patreon subscription.
+                                                    Adquira o tema através de uma
+                                                    assinatura no nosso Patreon.
                                                 </p>
                                                 <p>
-                                                    Cancelling the subscription
-                                                    results in keeping the
-                                                    theme, however you will not
-                                                    receive future updates
-                                                    unless you resubscribe.
+                                                    Cancelar a assinatura
+                                                    resulta em manter o
+                                                    tema, porém você não
+                                                    receberá atualizações futuras
+                                                    a menos que assine novamente.
                                                 </p>
                                                 <p>
-                                                    Once subscribed, download
-                                                    the latest listed version
-                                                    and then open Millennium and
-                                                    click the open skins folder.
-                                                    Drag the downloaded theme
-                                                    into that directory and
-                                                    proceed to extract it.
+                                                    Após a assinatura, baixe
+                                                    a versão mais recente listada
+                                                    e então abra o Millennium e
+                                                    clique na pasta "Open Skins".
+
+                                                    Arraste o tema baixado
+                                                    para esse diretório e
+                                                    extraia-o.
                                                 </p>
                                                 <p>
-                                                    Select it from the menu and
-                                                    your good to go!
+                                                    Selecione-o no menu e
+                                                    está pronto para usar!
                                                 </p>
-                                                <h2>Configuration</h2>
+                                                <h2>Configuração</h2>
                                                 <p>
-                                                    Fluenty comes with various
-                                                    tweak options that you can
-                                                    customize.
+                                                    O Fluenty vem com várias
+                                                    opções de ajuste que você pode
+                                                    personalizar.
                                                 </p>
                                                 <p>
-                                                    You can find more options
-                                                    once you have fluenty
-                                                    installed by going to the
-                                                    theme's settings. Below are
-                                                    the examples of fluenty's
-                                                    sidebar options and the play
-                                                    game button alignment.
+                                                    Você pode encontrar mais opções
+                                                    depois de instalar o Fluenty
+                                                    acessando as configurações
+                                                    do tema. Abaixo estão
+                                                    exemplos das opções da barra lateral
+                                                    do Fluenty e o alinhamento
+                                                    do botão de jogar.
                                                 </p>
                                                 <a
                                                     href="https://raw.githubusercontent.com/SteamClientHomebrew/SteamBrew/refs/heads/main/steambrew/www/src/media/images/tweakOptions.jpg"
@@ -328,18 +322,19 @@ export default function FluentyClient({ isSteamClient }: FluentyClientProps) {
                                                 >
                                                     <img
                                                         src="https://raw.githubusercontent.com/SteamClientHomebrew/SteamBrew/refs/heads/main/steambrew/www/src/media/images/tweakOptions.jpg"
-                                                        alt="Steam Skin"
+                                                        alt="Skin da Steam"
                                                     />
                                                 </a>
-                                                <h2>Notice</h2>
+                                                <h2>Aviso</h2>
                                                 <p>
-                                                    Fluenty is very close to
-                                                    being finished, however it's
-                                                    still in development and not
-                                                    everything is perfect.
-                                                    expect bugs and report them
-                                                    in the discord server if you
-                                                    encounter any!
+                                                    Fluenty está muito perto de
+                                                    ser finalizado, porém ainda está
+                                                    em desenvolvimento e nem tudo está
+                                                    perfeito.
+
+                                                    Espere encontrar bugs e reporte-os
+                                                    no servidor do Discord (Inglês)
+                                                    caso encontre algum!
                                                 </p>
                                                 <br />
                                                 <br />

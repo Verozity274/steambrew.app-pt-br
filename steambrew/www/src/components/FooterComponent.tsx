@@ -10,7 +10,7 @@ function RenderFooter() {
 							</a>
 						</div>
 						<div className="footer-column">
-							<h3 className="footer-column-header">Community</h3>
+							<h3 className="footer-column-header">Comunidade</h3>
 							<a rel="noreferrer noopener" target="_blank" href="/discord" className="footer-column-item">
 								<span>Discord</span>
 							</a>
@@ -19,18 +19,18 @@ function RenderFooter() {
 							</a>
 						</div>
 						<div className="footer-column">
-							<h3 className="footer-column-header">Content</h3>
-							<a href="/themes" className="footer-column-item">
-								<span>Themes</span>
+							<h3 className="footer-column-header">Conteúdo</h3>
+							<a href="/temas" className="footer-column-item">
+								<span>Temas</span>
 							</a>
-							<a href="https://docs.steambrew.app/developers/" className="footer-column-item">
-								<span>Developers</span>
+							<a href="https://docs.steambrew.app/pt-br/desenvolvedores/" className="footer-column-item">
+								<span>Desenvolvedores</span>
 							</a>
 						</div>
 						<div className="footer-column">
-							<h3 className="footer-column-header">Help</h3>
-							<a href="https://docs.steambrew.app/users/" target="_blank" className="footer-column-item">
-								Documentation
+							<h3 className="footer-column-header">Ajuda</h3>
+							<a href="https://docs.steambrew.app/pt-br/usuarios/" target="_blank" className="footer-column-item">
+								Documentação
 							</a>
 						</div>
 					</section>
@@ -43,14 +43,14 @@ function RenderFooter() {
 								<a href="/discord" className="footer-privacy-item">
 									Discord
 								</a>
-								<a href="https://docs.steambrew.app/" className="footer-privacy-item">
-									Documentation
+								<a href="https://docs.steambrew.app/pt-br/" className="footer-privacy-item">
+									Documentação
 								</a>
 							</div>
 						</div>
 						<div className="flex-container wrap" id="footer-copyright-container">
 							<div className="footer-copyright text-center"> © {new Date().getFullYear()} Steam Client Homebrew</div>
-							<div className="footer-disclaimer">Steam Homebrew is not affiliated with nor endorsed by Valve Corporation.</div>
+							<div className="footer-disclaimer">Steam Homebrew não é afiliado nem endossado pela Valve Corporation.</div>
 						</div>
 						<div id="footer-social-icons" className="flex-container justify-center wrap">
 							<a rel="noreferrer noopener" target="_blank" href="/discord" className="social-icon discord">

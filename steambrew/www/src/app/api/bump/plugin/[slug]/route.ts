@@ -12,7 +12,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ slug
 	const { slug } = await params;
 	if (!slug) {
 		return withCORS(
-			new Response(JSON.stringify({ success: false, message: 'Missing plugin slug' }), {
+			new Response(JSON.stringify({ success: false, message: 'Plugin ausente' }), {
 				status: 400,
 			}),
 		);
@@ -24,7 +24,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ slug
 
 		if (!plugin || !plugin.initCommitId) {
 			return withCORS(
-				new Response(JSON.stringify({ success: false, message: 'Plugin not found' }), {
+				new Response(JSON.stringify({ success: false, message: 'Plugin não encontrado' }), {
 					status: 404,
 				}),
 			);
@@ -36,19 +36,19 @@ export async function GET(request: Request, { params }: { params: Promise<{ slug
 			new Response(
 				JSON.stringify({
 					success: true,
-					message: 'Download count updated successfully.',
+					message: 'Contagem de downloads atualizada com sucesso.',
 					downloadCount: newCount,
 				}),
 				{ status: 200 },
 			),
 		);
 	} catch (err) {
-		console.error('Error updating download count:', err);
+		console.error('Erro ao atualizar a contagem de downloads:', err);
 		return withCORS(
 			new Response(
 				JSON.stringify({
 					success: false,
-					message: 'An error occurred updating the download count.',
+					message: 'Ocorreu um erro ao atualizar a contagem de downloads.',
 				}),
 				{ status: 500 },
 			),

@@ -8,7 +8,7 @@ const FindPlugin = async (id: string) => {
 	const plugin = (await FetchPlugins()).pluginData.find((plugin) => plugin.id === id);
 
 	if (!plugin) {
-		throw new Error('Plugin not found');
+		throw new Error('Plugin não encontrado');
 	}
 
 	const pluginsDir = process.env.PLUGINS_DIR;
@@ -19,11 +19,11 @@ const FindPlugin = async (id: string) => {
 			plugin.fileSize = s.size;
 			plugin.hasValidBuild = true;
 		} else {
-			console.warn(`Plugin ${plugin.id} does not have a build available.`);
+			console.warn(`Plugin ${plugin.id} não possui uma versão compilada disponível.`);
 			plugin.hasValidBuild = false;
 		}
 	} catch (error) {
-		console.error('An error occurred while checking plugin build:', error);
+		console.error('Ocorreu um erro ao verificar a compilação do plugin:', error);
 		plugin.hasValidBuild = false;
 	}
 
@@ -60,7 +60,7 @@ export async function OPTIONS() {
 	return new Response(null, {
 		status: 204,
 		headers: {
-			/** Whitelist the Steam Client to allow it to make requests */
+			/** Adicione o cliente Steam à lista de permissões para permitir que ele faça solicitações. */
 			'Access-Control-Allow-Origin': 'https://steamloopback.host',
 			'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
 			'Access-Control-Allow-Headers': 'Content-Type',
